@@ -1,0 +1,41 @@
+# Docker
+docker-compose.override.yml
+*.dockerignore
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE/Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+
+# Client (React)
+client/.env
+client/build/
+client/coverage/
+
+# Server (Node.js/Express)
+server/.env
+server/coverage/
+
+# MongoDB data
+data/
