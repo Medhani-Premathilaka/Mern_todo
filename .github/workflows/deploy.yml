@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Get the code
-      uses: actions/checkout@4
+      uses: actions/checkout@v4
 
     - name: Build the App
       run: docker-compose build
