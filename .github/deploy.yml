@@ -1,0 +1,21 @@
+name: Build and Test MERN Todo App
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get the code
+      uses: actions/checkout@4
+
+    - name: Build the App
+      run: docker-compose build
+    
+    - name: Show success message
+      run: echo "Build completed successfully"
